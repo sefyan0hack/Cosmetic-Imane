@@ -1,0 +1,25 @@
+.titleContainer {
+    text-align: center;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+
+    padding: 20px;
+    background-color: #f4f4f48a; /* Light background to make the text stand out */
+    border-bottom: 1px solid hsl(0, 0%, 87%); /* Underline for separation */
+    height: 70px;
+    width: 600px;
+}
+
+.title {
+    font-size: 1.5em; /* Adjusted size for mobile */
+    color: #eb5ecc;
+    margin: 0;
+    font-family: 'Poppins', sans-serif; /* Optional: Add a custom font */
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 600px) {
+    .title {
+        font-size: 1.2em; /* Smaller font size for smaller screens */
+    }
+}

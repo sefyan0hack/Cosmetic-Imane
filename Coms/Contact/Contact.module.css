@@ -1,0 +1,104 @@
+.contactSection {
+    padding: 20px;
+    background-color: #f9f9f9;
+    width: 300px;
+}
+
+.contactContainer {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contactTitle {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contactSubtitle {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.contactContent {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.formLabel {
+    font-size: 1em;
+    color: #333;
+    text-align: left;
+}
+
+.formInput, .formTextarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.formTextarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.submitButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+    background-color: #0056b3;
+}
+
+.contactInfo {
+    margin-top: 20px;
+}
+
+.infoTitle {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.infoItem {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 600px) {
+    .contactTitle {
+        font-size: 1.5em;
+    }
+
+    .contactSubtitle {
+        font-size: 1em;
+    }
+
+    .formInput, .formTextarea {
+        font-size: 0.9em;
+    }
+
+    .submitButton {
+        font-size: 0.9em;
+    }
+}
