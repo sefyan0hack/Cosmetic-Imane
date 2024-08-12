@@ -3,8 +3,13 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  padding-top: 0rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-bottom: 6rem;
   min-height: 100vh;
+  background-color: #f8f8f8;
+  height: 100vh;
 }
 
 .description {

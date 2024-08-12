@@ -13,6 +13,8 @@ function Home() {
       <title>  Cosmetics Imane </title>
       <Title/>
       <Cards/>
+      <br></br>
+      <br></br>
       <Contact/>
     </main>
   );

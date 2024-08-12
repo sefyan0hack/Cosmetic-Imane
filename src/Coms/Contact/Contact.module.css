@@ -1,6 +1,5 @@
 .contactSection {
     padding: 20px;
-    background-color: #f9f9f9;
     width: 300px;
 }
 
@@ -16,11 +15,7 @@
     margin-bottom: 10px;
 }
 
-.contactSubtitle {
-    font-size: 1.1em;
-    color: #666;
-    margin-bottom: 20px;
-}
+
 
 .contactContent {
     display: flex;
@@ -69,13 +64,21 @@
 }
 
 .contactInfo {
+    
+    text-align: center;
     margin-top: 20px;
-}
+    width: 100vw ;
+    background-color: #5f5b5b;
 
-.infoTitle {
-    font-size: 1.2em;
-    color: #333;
-    margin-bottom: 10px;
+    bottom: 0;       /* Stick it to the bottom of the viewport */
+    left: 0;         /* Align it to the left */
+    height: auto;    /* Adjust height based on content */
+    padding: 10px; /* Optional: Add some padding */
+    box-sizing: border-box; /* Ensure padding and borders are included in width */
+}
+.contactInfo p {
+    font-size: large;
+    color: white;
 }
 
 .infoItem {
@@ -83,7 +86,9 @@
     color: #666;
     margin-bottom: 5px;
 }
-
+.Whatsapp{
+    display: none;
+}
 /* Media Query for Small Screens */
 @media (max-width: 600px) {
     .contactTitle {
@@ -100,5 +105,23 @@
 
     .submitButton {
         font-size: 0.9em;
+    }
+    .Whatsapp{
+        position: fixed; /* Fix the position relative to the viewport */
+        bottom: 16px;    /* Distance from the bottom of the screen */
+        right: 16px;     /* Distance from the right of the screen */
+        width: 60px;     /* Width of the icon */
+        height: 60px;    /* Height of the icon */
+        background-color: #25D366; /* Example background color (WhatsApp green) */
+        border-radius: 50%; /* Make it circular */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional: Shadow for better visibility */
+        z-index: 1000; /* Ensure it stays on top of other elements */
+    }
+    .Whatsapp img{
+        width: 70%;
+        height: 70%;
     }
 }

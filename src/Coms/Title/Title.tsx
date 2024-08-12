@@ -4,7 +4,7 @@ import styles from './Title.module.css'; // Ensure you have this CSS module
 function Title() {
     return (
         <div className={styles.titleContainer}>
-            <h1 className={styles.title}>Welcome to Cosmetics By Imane</h1>
+            <p className={styles.Title}> Cosmetic By Imane</p>
         </div>
     );
 }

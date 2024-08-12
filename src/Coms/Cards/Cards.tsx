@@ -13,12 +13,11 @@ type Product = {
 function Cards() {
   const items : Product[] = 
   [
-    {id:0, name:'لحسة الصحراوية', price:250, description: "this is decription of product", img: assets.Product_img},
+    {id:0, name:'لحسة الصحراوية', price:250, description: "اللحسة الصحراوية منتج طبيعي 100% بنتائج ثابتة و أمنة وملحوظة مقارنة مع بعض المنتجات التي تظهر نتائج سريعة مزيفة تزول وتختفي بمجرد التوقف عن الاستخدام. تتكون من عدة مكونات طبيعية وهي: اللوز - دبس التمر- الكركاع - كاوكاو - الصوجا - دروة الجمل - الزنجلان - حبة الحلاوة - لكتيرة - نوتيلا – العسل - حلوة الناطا", img: assets.Product_img},
     {id:0, name:'تحميلات',price:100, description: "this is decription of product", img: assets.Product_img},
     {id:0, name:'صابون طبيعي', price:50, description: "this is decription of product", img: assets.Product_img},
     {id:0, name:'مطول الشعر', price:70, description: "this is decription of product", img: assets.Product_img},
     {id:0, name:'اسم المنتوج', price:100, description: "this is decription of product", img: assets.Product_img},
-    
   ];
   let msg : string;
   return (
@@ -32,12 +31,24 @@ function Cards() {
         </a>
         <div className={`${styles.productDetail} w-100`}>
            <a rel="noopener" href={`https://wa.me/212607848440?text=Hi imane I want to buy "${item.name}" that costs ${item.price} DH`}>
-              <h2>{item.name}</h2>
-              <h3>{item.description}</h3>
+               <h2> 
+                  <p className={styles.Productname}>
+                     {item.name}
+                  </p>
+               </h2>
            </a>
+              <h3> 
+                  <p className={styles.Description}>
+                     {item.description.substring(0,99) + "..." } 
+                     
+                  </p> 
+               </h3>
            <div>
-              <h3>
-                 MAD {item.price} <del>300</del>
+              <h3 >
+               <p className={styles.price}>
+               {item.price} DH
+               <del >300 dh</del>
+               </p> 
               </h3>
            </div>
         </div>
