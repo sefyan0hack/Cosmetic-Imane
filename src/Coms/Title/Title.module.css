@@ -6,26 +6,95 @@
     background-color: #ff8cec8a;
     border-bottom: 1px solid hsl(0, 0%, 87%);
     width: 100vw;
+
+    position: relative; /* Ensure proper positioning of child elements */
+    overflow: visible; /* Ensure child elements are not clipped */
 }
-.Title{
-    font-family: cursive;
-    font-size: 131%;
+.bar{
+    width: 40px;
+    height: 40px;
+
+    margin-left: auto;
+    margin-top: -1%;
+    margin-bottom: -1%;
+    display: flex;
+    padding: 0; /* Ensure padding is not causing layout issues */
+
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    z-index: 1;
 }
 
-
-/* Media Query for Small Screens */
 @media (max-width: 600px) {
     .titleContainer {
         justify-content: center;
         align-items: center;
         margin-bottom: 3rem;
         padding: 20px;
-        /* background-color: #ff8cec8a; */
         border-bottom: 1px solid hsl(0, 0%, 87%);
         width: 100vw;
     }
-    .Title{
-        font-family: cursive;
-        font-size: 131%;
+
+    .bar{
+        width: 40px;
+        height: 40px;
+    
+        margin-top: -4%;
+        margin-bottom: -4%;
+        margin-left: auto;
+        padding: 0%;
+        display: flex;
+        /* align-items: center;
+        justify-content: center; */
+        z-index: 1;
     }
+}
+
+  
+/* .logoContainer {  for log in futer
+  position: absolute;
+  left: 10px;
+} 
+
+.logo {
+  height: 50px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}*/
+
+.titleWrapper {
+
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.title {
+    text-align: left;
+    font-size: 100%;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Pacifico', cursive; /* A stylish, handwritten font */
+
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 1;
+}
+.titleWrapper::before {
+  content: '';
+  position: absolute;
+  width: 120%;
+  height: 150%;
+  background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 70%);
+  top: -50%;
+  left: -10%;
+  animation: shine 3s infinite linear;
+}
+
+@keyframes shine {
+  0% { transform: rotate(20deg) translate(-100%, -50%); }
+  100% { transform: rotate(20deg) translate(120%, 150%); }
 }
