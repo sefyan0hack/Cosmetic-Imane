@@ -15,7 +15,7 @@ function Cards() {
   [
     {id:0, name:'لحسة الصحراوية', price:250, description: "this is decription of product", img: assets.Product_img},
     {id:0, name:'تحميلات',price:100, description: "this is decription of product", img: assets.Product_img},
-    {id:0, name:'صابون طبيعي', price:50, description: "this is decription of product", img: assets.Product_img},
+   //  {id:0, name:'صابون طبيعي', price:50, description: "this is decription of product", img: assets.Product_img},
    //  {id:0, name:'مطول الشعر', price:70, description: "this is decription of product", img: assets.Product_img},
    //  {id:0, name:'اسم المنتوج', price:100, description: "this is decription of product", img: assets.Product_img},
     
