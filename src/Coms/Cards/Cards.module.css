@@ -7,84 +7,13 @@
   margin-right:  2%;
   width: 30%;
   margin: 1%;
-letter-spacing: 0.01rem;
---bs-blue: #00CFE8;
---bs-indigo: #394265;
---bs-purple: #e099b4;
---bs-pink: #D63384;
---bs-red: #EA5455;
---bs-orange: #FF9F43;
---bs-yellow: #FFC107;
---bs-green: #28C76F;
---bs-teal: #20C997;
---bs-cyan: #0DCAF0;
---bs-white: #FFFFFF;
---bs-gray: #B8C2CC;
---bs-gray-dark: #1E1E1E;
---bs-gray-100: #BABFC7;
---bs-gray-200: #EDEDED;
---bs-gray-300: #DAE1E7;
---bs-gray-400: #636363;
---bs-gray-500: #ADB5BD;
---bs-gray-600: #B8C2CC;
---bs-gray-700: #4E5154;
---bs-gray-800: #1E1E1E;
---bs-gray-900: #2A2E30;
---bs-primary: #e099b4;
---bs-secondary: #82868B;
---bs-success: #28C76F;
---bs-info: #00CFE8;
---bs-warning: #FF9F43;
---bs-danger: #EA5455;
---bs-light: #F6F6F6;
---bs-dark: #4B4B4B;
---bs-primary-rgb: 224, 153, 180;
---bs-secondary-rgb: 130, 134, 139;
---bs-success-rgb: 40, 199, 111;
---bs-info-rgb: 0, 207, 232;
---bs-warning-rgb: 255, 159, 67;
---bs-danger-rgb: 234, 84, 85;
---bs-light-rgb: 246, 246, 246;
---bs-dark-rgb: 75, 75, 75;
---bs-white-rgb: 255, 255, 255;
---bs-black-rgb: 34, 41, 47;
---bs-body-rgb: 110, 107, 123;
---bs-font-sans-serif: 'Montserrat', Helvetica, Arial, serif;
---bs-font-monospace: 'Montserrat', Helvetica, Arial, serif;
---bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
---bs-body-font-family: var(--bs-font-sans-serif);
---bs-body-font-size: 1rem;
---bs-body-font-weight: 400;
---bs-body-line-height: 1.45;
---bs-body-color: #6E6B7B;
---bs-body-bg: #F8F8F8;
---swiper-theme-color: #007aff;
---swiper-navigation-size: 44px;
-line-height: var(--bs-body-line-height);
-color: var(--bs-body-color);
-text-align: var(--bs-body-text-align);
--webkit-text-size-adjust: 100%;
--webkit-tap-highlight-color: rgba(34, 41, 47, 0);
-font-style: inherit;
-font-family: 'Al-Jazeera-Arabic-Bold';
-font-weight: 400;
-font-size: 1rem;
-direction: ltr;
-box-sizing: border-box;
-position: relative;
-display: flex;
--webkit-box-orient: vertical;
--webkit-box-direction: normal;
-flex-direction: column;
-min-width: 0;
-word-wrap: break-word;
-background-color: #FFFFFF;
-background-clip: border-box;
-border: 0 solid rgba(34, 41, 47, 0.125);
-border-radius: 0.428rem;
-box-shadow: 0 4px 24px 0 rgba(34, 41, 47, 0.1);
-transition: all 0.3s ease-in-out, background 0s, color 0s, border-color 0s;
-overflow: hidden;
+  background-clip: border-box;
+  border: 0 solid rgba(34, 41, 47, 0.125);
+  border-radius: 0.428rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 24px 0 rgba(34, 41, 47, 0.1);
+  transition: all 0.3s ease-in-out, background 0s, color 0s, border-color 0s;
+  overflow: hidden;
 }
 .card:hover {
 transform: scale(1.05);
@@ -92,11 +21,8 @@ box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 .cardImg {
-
   border-top-left-radius: 0.428rempx;
   border-top-right-radius: 0.428rempx;
-  height: 260px;
-
 }
 
 .productDetail {
@@ -159,7 +85,6 @@ font-size: 0.8em;
 .cardImg {
   border-top-left-radius: 0.428rempx;
   border-top-right-radius: 0.428rempx;
-  height: 260px;
 }
 
 .productDetail h2 {
