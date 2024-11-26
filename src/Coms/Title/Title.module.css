@@ -35,6 +35,8 @@
         padding: 20px;
         border-bottom: 1px solid hsl(0, 0%, 87%);
         width: 100vw;
+        border-bottom-left-radius: 25%;
+        border-bottom-right-radius:25%;
     }
 
     .bar{
@@ -50,9 +52,38 @@
         justify-content: center; */
         z-index: 1;
     }
+  
+    .Menu {
+      display: flex;
+      position: static;
+      background-color: transparent;
+      font-size: larger;
+      font-weight: 200;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+  
+    .Menu ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      border-radius: 2%;
+    }
+  
+    .Menu li {
+      padding: 0 15px;
+    }
+  
+    .Menu li a {
+      color: #333;
+    }
+  
+    .Menu li a:hover {
+      background-color: transparent;
+      color: #0070f3;
+    }
 }
 
-  
 /* .logoContainer {  for log in futer
   position: absolute;
   left: 10px;

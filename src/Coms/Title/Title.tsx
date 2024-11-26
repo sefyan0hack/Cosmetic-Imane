@@ -6,7 +6,18 @@ import { assets } from '@/src/assets/assets';
 
 function Title() {
     const [isBarOpen, setIsBarOpen] = useState(false);
-
+    let menu = (
+      <>
+      <br />
+      <div className={styles.Menu}>
+        <ul>
+          <li><a href="">About Us</a></li>
+          <li><a href="">News</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+      </>
+    );
     return (
         // <div className={styles.titleContainer}>
         //     <p className={styles.Title}> Cosmetic By Imane</p>
@@ -24,7 +35,7 @@ function Title() {
           alt="Navigation Icon"
         />
       </div>
-      {isBarOpen && <div><p>Bar is pressed</p></div>}
+      {isBarOpen && menu}
     </div>
     );
 }
